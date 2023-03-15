@@ -35,10 +35,10 @@ public class Ejercicio4 {
     public static boolean Primo(int num1){
         boolean primo = true;
                 
-        if (num1 == 0 || num1 == 1){
+        if (num1 <= 1){
             primo = false;
         } else { 
-                for (int i = 2; i < Math.abs(num1) ; i++){
+                for (int i = 2; i < num1 ; i++){
                    if(num1 % i == 0){
                         primo = false;
                         break;  // para salir del loop.
